@@ -1,5 +1,6 @@
 import React from "react";
 import Icofont from "react-icofont";
+import ConForm from "../layouts/ConForm";
 import "./Contact.scss";
 const Contact = () => {
   const contacts = [
@@ -42,7 +43,7 @@ const Contact = () => {
           </h6>
           <div className="con-cards">
             {contacts.map((contact) => (
-              <div className="con-card">
+              <div className="con-card" key={contact.name}>
                 <div className="con-card-icon">
                   <Icofont icon={contact.icon} />
                 </div>
@@ -54,42 +55,13 @@ const Contact = () => {
             ))}
             <div className="con-card con-social">
               {socials.map((social) => (
-                <a href={social.status} className="soc">
+                <a href={social.status} className="soc" key={social.name}>
                   <Icofont icon={social.icon} />
                 </a>
               ))}
             </div>
           </div>
-          <div className="con-form">
-            <form action="/">
-              <div className="info">
-                <input
-                  className="fname"
-                  type="text"
-                  name="fullname"
-                  placeholder="Full name"
-                />
-                <input type="text" name="email" placeholder="Email" />
-                <input
-                  type="text"
-                  className="phone-num"
-                  name="phone"
-                  placeholder="Phone number"
-                />
-              </div>
-              <p>Message</p>
-              <div className="con-area-cont">
-                <textarea
-                  name="message"
-                  rows="10"
-                  className="con-area"
-                ></textarea>
-                <button type="submit" className="con-sub btn" href="/">
-                  Send Message
-                </button>
-              </div>
-            </form>
-          </div>
+          <ConForm />
         </div>
       </div>
     </div>
