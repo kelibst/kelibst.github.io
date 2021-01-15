@@ -1,0 +1,110 @@
+.pro {
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  flex-direction: column;
+  background-color: var(--dark-en);
+  width: 100%;
+
+  &-tool {
+    margin-bottom: 1rem;
+  }
+
+  &-connt {
+    max-width: 900px;
+    margin: 3rem auto;
+  }
+
+  &-img {
+    width: 100%;
+    border-radius: 2rem;
+    min-height: 200px;
+  }
+
+  .pro-ico {
+    position: absolute;
+    top: 1rem;
+    right: 1.5rem;
+    font-size: 1.4rem;
+    background: var(--dark-en);
+    padding: 0.5rem;
+    border-radius: 59%;
+    color: white;
+  }
+
+  &-tech {
+    position: absolute;
+    top: 1rem;
+    padding-left: 1rem;
+    text-decoration: underline;
+  }
+}
+
+p.pro-tech {
+  position: absolute;
+  top: 1rem;
+  padding-left: 1rem;
+  text-decoration: underline;
+}
+
+.pro-card {
+  max-width: 300px;
+  border-radius: 2rem;
+  position: relative;
+
+  &-name {
+    font-size: 1.2rem;
+    color: yellow;
+    font-weight: bold;
+    margin: 1rem 0;
+
+    &:hover {
+      color: white;
+    }
+  }
+
+  &-icon {
+    margin-bottom: 1rem;
+    min-width: 257px;
+  }
+
+  &-de {
+    display: flex;
+    justify-content: space-between;
+    text-decoration: underline;
+    margin-top: 1rem;
+    flex-wrap: wrap;
+  }
+}
+
+ul.pro-ul {
+  display: flex;
+  justify-content: space-evenly;
+  margin-bottom: 4rem;
+}
+
+li.pro-li {
+  list-style: none;
+}
+
+a.pro-link {
+  color: white;
+  padding: 1rem;
+  font-weight: bold;
+
+  &:hover {
+    color: var(--yelow);
+  }
+
+  .active {
+    color: var(--yelow);
+  }
+}
+
+.all {
+  display: grid;
+  grid-gap: 2rem;
+  grid-template-columns: repeat(auto-fit, minmax(257px, 1fr));
+  margin: 2rem;
+}

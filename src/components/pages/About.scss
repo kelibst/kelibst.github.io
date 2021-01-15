@@ -1,0 +1,157 @@
+@mixin double-container {
+  display: grid;
+  grid-template-columns: 40% 60%;
+  grid-gap: 2rem;
+  max-width: 900px;
+  margin: 3rem auto;
+}
+
+@mixin grid-templates {
+  display: grid;
+  grid-gap: 2rem;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  align-items: center;
+}
+
+@mixin content {
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  flex-direction: column;
+  background-color: var(--dark-en);
+  width: 100%;
+}
+.interest {
+  @include grid-templates();
+}
+.about {
+  @include content();
+
+  &-card {
+    display: flex;
+
+    &-icon {
+      padding: 1rem;
+      border: 1px dotted;
+      margin: 0 1rem;
+      align-self: flex-start;
+
+      & > i {
+        font-size: 1.3rem;
+        color: var(--yelow);
+      }
+    }
+  }
+  &-exp {
+    @include grid-templates();
+  }
+
+  &-exps {
+    @include double-container();
+  }
+
+  &-header {
+    text-align: center;
+
+    margin: 1rem;
+    margin-top: 4rem;
+    font-size: 2rem;
+    font-weight: bolder;
+  }
+
+  &-container {
+    margin: 2rem;
+  }
+
+  &-profile {
+    @include double-container();
+  }
+}
+.img-fluid {
+  max-width: 100%;
+  height: auto;
+  box-shadow: -10px 10px var(--yelow);
+  transition: all 0.2s;
+
+  &:hover {
+    transition: all 0.2s;
+    box-shadow: -10px 10px white;
+    transform: scale(1.1);
+  }
+}
+.work-img img {
+  transition: all 1s;
+}
+.name {
+  color: var(--yelow);
+  font-size: 2rem;
+  margin: 0;
+  font-weight: bolder;
+  margin-bottom: 1rem;
+  font-family: "Big Shoulders Stencil Text", cursive;
+}
+
+.title {
+  font-size: 1rem;
+  margin: 0;
+  margin-bottom: 1rem;
+}
+.content {
+  line-height: 2;
+}
+
+.btn-contents {
+  justify-content: center;
+  display: flex;
+  flex-wrap: nowrap;
+}
+.btn-yellow {
+  padding: 1rem;
+  color: black;
+  background: var(--yelow);
+  margin: 1rem;
+  text-transform: uppercase;
+  border: 1px solid var(--yelow);
+  box-shadow: 3px 5px rgb(5, 5, 5);
+  border-radius: 6px;
+  transition: all 0.2s;
+
+  &:hover {
+    background: whitesmoke;
+    box-shadow: 3px 5px var(--yelow);
+    transform: translateY(-20px);
+    transition: all 0.2s;
+  }
+}
+.card-desc {
+  font-size: 0.8rem;
+  font-weight: bolder;
+  color: yellow;
+  padding-top: 5px;
+}
+
+.about-card-header {
+  text-transform: capitalize;
+  font-weight: bold;
+}
+.interest-card-icon > i {
+  font-size: 1.8rem;
+  color: var(--yelow);
+  margin: 1rem;
+}
+// 540px	720px	960px	1140px
+@media only screen and (max-width: 540px) {
+  div.description{
+    margin-top: 2rem;
+  }
+  a.btn-yellow{
+    text-align: center;
+  }
+
+  div.about{
+    &-card-icon{
+      padding: .5rem;
+    }
+  }
+}

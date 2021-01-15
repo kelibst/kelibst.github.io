@@ -1,0 +1,35 @@
+.home {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  background-color: var(--dark-en);
+
+  &-head {
+    position: relative;
+    z-index: 10;
+
+    font-size: 1.8rem;
+    font-weight: bold;
+    margin-bottom: 2rem;
+
+    &er{
+      font-size: 2rem;
+      font-size: bolder;
+    }
+  }
+  &-content {
+    text-align: center;
+  }
+}
+
+.box {
+  position: absolute;
+  bottom: 0;
+  display: inline-block;
+  background-color: var(--yelow);
+  height: 5px;
+  z-index: -1;
+  opacity: 0;
+}
