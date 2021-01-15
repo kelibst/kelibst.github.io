@@ -8,7 +8,7 @@
 
 .container {
   background: black;
-  min-width: 96vw;  
+  min-width: 100vw;  
   display: flex;
 }
 body {
@@ -25,7 +25,7 @@ body {
   min-width: 100%;
   min-height: 100%;
   display: flex;
-  overflow: scroll;
+  overflow: hidden;
 }
 .text {
   &-white {
