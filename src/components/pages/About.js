@@ -55,7 +55,7 @@ const About = () => {
           >
             <img
               className=" img-fluid b-shadow-a"
-              alt="User passport picture"
+              alt="User passport"
               src="https://zelda-fan-page.s3.amazonaws.com/keli_portfolio/images/passport4.jpg"
             />
           </a>

@@ -7,23 +7,22 @@ import { TextPlugin } from "gsap/TextPlugin";
 gsap.registerPlugin(TextPlugin, RoughEase);
 
 const Home = () => {
-  const words = [
-    "Keli",
-    "A Ruby Developer",
-    "A Ruby on Rails Developer",
-    "A Front-End Software Developer",
-    "A Back-End Software Developer",
-    "A Full-Stack Software Developer",
-  ];
-
   let cur = useRef(null);
   let box = useRef(null);
   let hi = useRef(null);
   let textAnim = useRef(null);
-  let tl = gsap.timeline();
-  let masterTl = gsap.timeline({ repeat: -1 }).pause();
 
   useEffect(() => {
+    const words = [
+      "Keli",
+      "A Ruby Developer",
+      "A Ruby on Rails Developer",
+      "A Front-End Software Developer",
+      "A Back-End Software Developer",
+      "A Full-Stack Software Developer",
+    ];
+    let tl = gsap.timeline();
+    let masterTl = gsap.timeline({ repeat: -1 }).pause();
     words.forEach((word) => {
       let tline = gsap.timeline({ repeat: 1, yoyo: true, repeatDelay: 1 });
       tline.to(textAnim, { duration: 1.6, text: word });

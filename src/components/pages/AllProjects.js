@@ -96,7 +96,7 @@ const AllProjects = () => {
           <div className="pro-card-icon">
             <img src={pro.icon} alt="" className="pro-img" />
             <p className="pro-tech">{pro.tech}</p>
-            <a target="_blank" href={pro.live_link ? pro.live_link : pro.link} className="pro-card-name">
+            <a target="_blank" rel="noreferrer" href={pro.live_link ? pro.live_link : pro.link} className="pro-card-name">
               <Icofont className="pro-ico" icon="plus" />
             </a>
           </div>

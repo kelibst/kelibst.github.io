@@ -7,8 +7,9 @@ import './Sidebar.scss'
 const SideBar = (props) => {
     const { show } = props
     let ref = useRef(null);
-    let tl = gsap.timeline();
-    useEffect(() => {
+   
+    useEffect(() => { 
+      let tl = gsap.timeline();
        if (show){
         tl
         .to(
@@ -21,7 +22,6 @@ const SideBar = (props) => {
           }
         ) 
        }else{
-        console.log('run esje')
         tl.to(ref, 0.3, {
           opacity: 0, 
           width: 0,
