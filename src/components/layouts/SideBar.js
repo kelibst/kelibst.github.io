@@ -40,17 +40,17 @@ const SideBar = (props) => {
             </NavLink>
           </li>
           <li className="side-li">
-            <NavLink to="/#/about" className="side-link text-white">
+            <NavLink to="/about" className="side-link text-white">
               <Icofont icon="user" /> About Me
             </NavLink>
           </li>
           <li className="side-li">
-            <NavLink to="/#/projects" className="side-link text-white">
+            <NavLink to="/projects" className="side-link text-white">
               <Icofont icon="briefcase" /> Projects
             </NavLink>
           </li>
           <li className="side-li">
-            <NavLink to="/#/contact" className="side-link text-white">
+            <NavLink to="/contact" className="side-link text-white">
               <Icofont icon="envelope" /> Contact
             </NavLink>
           </li>

@@ -1,4 +1,4 @@
-# Kekeli
+# kelibst.github.io
 my personal portfolio, built with React and completely responsive
 
 
@@ -29,7 +29,7 @@ my personal portfolio, built with React and completely responsive
 ### Usage
 - Clone the project 
 ```
-git clone https://https://github.com/kelibst/kekeli.git
+git clone https://https://github.com/kelibst/kelibst.github.io.git
 ```
 - Run `npm install` to install the local dependencies
 - Run `npm start` to launch local development server
